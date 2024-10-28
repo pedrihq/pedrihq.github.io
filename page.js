@@ -2,14 +2,17 @@ var navLaboratorio = document.querySelector("#nav-laboratorio");
 const projetosLaboratorio = [
   {
     h1: "Calculadora",
-    url: "./img/calculadora-img.jpeg",
-    p: "Uma calculadora simples criada com React.js e Tailwind",
+    url: "img/img-projetos/calculadora-img.jpeg",
+    p: "Uma calculadora simples criada com Next.js e Tailwind",
+    href:"https://github.com/pedrihq/calculadora"
   },
 ];
 
 projetosLaboratorio.map((item) => {
-  const caixa = document.createElement("div");
+  const caixa = document.createElement("a");
   caixa.classList.add("caixa-laboratorio");
+  caixa.setAttribute("href", item.href)
+  caixa.setAttribute("target", "_blank")
 
   const titulo = document.createElement("h1");
   titulo.innerHTML = item.h1;

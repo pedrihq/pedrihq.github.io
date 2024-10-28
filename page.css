@@ -89,6 +89,14 @@
       }
     }
   }
+  .caixa-laboratorio:hover{
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  .caixa-laboratorio:active{
+    transform: scale(0.5);
+    transition: 0.3s ease;
+  }
 }
 
 @media (max-width: 768px) {
@@ -282,6 +290,12 @@ body {
   border-radius: 10px;
   color: var(--color-p);
   background-color: #3a2486;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+.caixa-laboratorio:hover{
+  transform: scale(1.2);
+  box-shadow: rgba(233, 37, 161, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .paragraph {
   width: 100%;
