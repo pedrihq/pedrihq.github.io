@@ -63,6 +63,12 @@
       }
     }
   }
+  .caixa-laboratorio{
+    width: auto !important;
+    & img {
+      height: 100%;
+    }
+  }
   .rodape {
     & div {
       flex-direction: column !important;
@@ -89,11 +95,11 @@
       }
     }
   }
-  .caixa-laboratorio:hover{
+  .caixa-laboratorio:hover {
     transform: none !important;
     box-shadow: none !important;
   }
-  .caixa-laboratorio:active{
+  .caixa-laboratorio:active {
     transform: scale(0.5);
     transition: 0.3s ease;
   }
@@ -273,17 +279,16 @@ body {
 }
 #nav-laboratorio {
   display: flex;
-  justify-content: space-between;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 .caixa-laboratorio {
   width: 10em;
-  height: 15em;
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 5px;
@@ -293,13 +298,17 @@ body {
   text-decoration: none;
   transition: 0.2s linear;
 }
-.caixa-laboratorio:hover{
+.caixa-laboratorio:hover {
   transform: scale(1.2);
-  box-shadow: rgba(233, 37, 161, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  box-shadow: rgba(233, 37, 161, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .paragraph {
   width: 100%;
   font-size: small;
+  text-align: center;
+  height: -webkit-fill-available;
 }
 .paragraph:hover {
   color: var(--color-quinto);
